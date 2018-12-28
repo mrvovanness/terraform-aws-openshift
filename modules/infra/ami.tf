@@ -15,7 +15,7 @@ data "aws_ami" "commercial" {
 
   filter {
     name   = "name"
-    values = ["RHEL-7.5_HVM_GA-????????-x86_64-*-Access2-*"]
+    values = ["RHEL-7.5_HVM_GA-????????-x86_64-*"]
   }
 
   filter {
