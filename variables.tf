@@ -14,6 +14,23 @@ variable "public_cidrs" {
   description = "CIDRS that is allowed from which public users can access served services in the cluster"
 }
 
+variable "platform_vpc_id" {
+  description = "Use predefined vpc"
+  default     = ""
+}
+
+variable "platform_public_subnet_ids" {
+  description = "Use predefined public subnets"
+  type        = "list"
+  default     = []
+}
+
+variable "platform_private_subnet_ids" {
+  description = "Use predefined private subnets"
+  type        = "list"
+  default     = []
+}
+
 variable "use_spot" {
   default = false
 }
